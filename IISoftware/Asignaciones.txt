@@ -1,0 +1,30 @@
+Asignaciones de la implementacion:
+
+Paula Cuenca:FiltrarResultados()
+Manuel González:AplicarFiltro()
+Beatriz Huertas:MostrarResultados(), MostrarComentarios()
+Omar David Jara:Comentar()
+Rubén Molina:IniciarSesion()
+Javier Quirante:DevolverTarifas()
+Roberto Navarro:BuscarTarifas()
+
+Asignaciones de las pruebas:
+
+Paula Cuenca: AplicarFiltro()
+Manuel González: MostrarResultados(), MostrarComentarios()
+Beatriz Huertas: Comentar()
+Omar David: IniciarSesion()
+Rubén Molina: DevolverTarifas()
+Javier Quirante: BuscarTarifas()
+Roberto Navarro: FiltrarResultados()
+
+Descripcion de caso de prueba:
+
+AplicarFiltro(): El usuario decide que filtros usar y los aplica en la interfaz. Se activan las casillas de los filtros seleccionados y se llama a filtrar resultados con esos filtrosf
+FiltrarResultados(): Recibe los filtros de la anterior clase
+MostrarResultados(): muestra los resultados por pantalla de las tarifas filtradas
+MostrarComentarios(): muestra los comentarios de la tarifa seleccionada
+Comentar(): El usuario escribe un comentario para la tarifa y lo publica creando un nuevo objeto comentario. Si no tiene la sesion iniciada el sistema pide que el usuario inicie sesion
+IniciarSesion(): El usuario inicia sesion y si no tiene sesion se registra
+BuscarTarifas(): Decide que tarifas almacenar en una lista para devolver al sistema en base a los filtros
+DevolverTarifas(): Devuelve las tarifas almacenadas en la lista al sistema
