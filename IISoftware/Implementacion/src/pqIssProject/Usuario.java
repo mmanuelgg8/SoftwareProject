@@ -4,6 +4,9 @@ public class Usuario {
 	private String nombre;
 	private String email;
 	private String contrasena;
+	public Usuario() {
+		super();
+	}
 	public Usuario(String email, String contrasena){
 		super();
 		this.email = email;
@@ -48,4 +51,5 @@ public class Usuario {
 	public void setEmail(String email) {
 		this.email = email;
 	}
+	
 }

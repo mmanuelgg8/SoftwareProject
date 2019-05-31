@@ -1,11 +1,11 @@
 package pqIssProject;
 
-import java.util.SortedMap;
-import java.util.TreeMap;
+import java.util.*;
 
 public class Sistema {
 	private Usuario usuarioActivo;
 	private SortedMap<String, Usuario> usuarios;
+	private LinkedList<Compañia> compañias;
 	
 	
 	public Sistema() {

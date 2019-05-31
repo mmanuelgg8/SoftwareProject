@@ -2,12 +2,9 @@ package pqIssProject;
 
 import java.util.LinkedList;
 
-public class Tarifa {
-	private double precio;
-	private String Url;
+public class Tarifa extends Producto{
 	private int permanencia;
-	private String ofertas;
-	private double puntuacionMedia;
+	public Comentario comentarioTemporal;
 	private LinkedList<Comentario> comentarios = new LinkedList<Comentario>();
 	public Tarifa() {
 		super();
@@ -25,6 +22,10 @@ public class Tarifa {
 		return str;
 	}
 	public void almacenarComentario(Comentario coment) {
+		//Crea una variable temporal para comprobar que el usuario esta logueado antes de publicar el comentario
+		comentarioTemporal = coment;
+	}
+	protected void añadirComentario(Comentario coment) {
 		comentarios.add(coment);
 	}
 	

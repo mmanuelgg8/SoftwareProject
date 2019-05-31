@@ -23,8 +23,9 @@ public class Comentario {
 	public Comentario getComentario(Comentario coment) {
 		return coment;
 	}
-	public void publicarComentario(String op, int pu) {
-		
+	public void publicarComentario(Tarifa tar, Comentario Com) {
+		//almacena el comentario en la lista de comentarios almacenada en tarifa
+		tar.añadirComentario(Com);
 	}
 	public String toString() {
 		return "Puntuacion: "+ puntuacion + "\n"+ "Opinion: "+ opinion;
